@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegante"
+    app:startDestination="@id/quadrinhosFragment">
+
+    <fragment
+        android:id="@+id/quadrinhosFragment"
+        android:name="br.com.zup.exercicio_03_aula_36.informacoes.quadrinhos.QuadrinhosFragment"
+        android:label="fragment_quadrinhos"
+        tools:layout="@layout/fragment_quadrinhos" >
+        <action
+            android:id="@+id/action_quadrinhosFragment_to_detalheFragment"
+            app:destination="@id/detalheFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detalheFragment"
+        android:name="br.com.zup.exercicio_03_aula_36.informacoes.DetalheFragment"
+        android:label="fragment_detalhe"
+        tools:layout="@layout/fragment_detalhe" />
+</navigation>
